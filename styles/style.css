@@ -38,6 +38,11 @@ box-sizing: border-box;
 .description{
     font-size: 1rem;
     margin: 32px 0;
+    color: #727272;
+}
+.section-title{
+    font-weight: bold;
+    font-size: 2.8rem;
 }
 
 
@@ -52,6 +57,9 @@ box-sizing: border-box;
 main,footer{
     max-width: 1440px;
     margin: 0 auto;
+}
+section{
+    margin-top: 130px;
 }
 
 /* navbar section start */
@@ -110,17 +118,116 @@ nav h2{
 
 /* banner section end */
 
+/* our features section */
+.our-feautures-wrap{
+    align-items: center;
+    padding: 0 31px;
+    gap: 76px;
+    margin-top: -45px;
+}
+.features-img-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 24px;
+}
+.features-img-container img{
+    max-width: 342px;
+    width: 100%;
+}
+.features-content{
+    width: 50%;
+
+}
+
+.features-span{
+    color: #FF900E;
+}
+
+
+/* some facts section  */
+.some-fact{
+   padding: 100px;
+}
+.some-fact-title{
+    margin-left: 15px;
+    width: 30%;
+}
+.facts-container{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.fact{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #727272;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* responsive with media queries */
+/* for mobile screen */
 @media screen and (max-width: 576px) {
-    .navbar,.nav-links{
+    .navbar,
+    .nav-links,
+    .our-feautures-wrap,
+    .facts-container{
         flex-direction: column;
         gap: 15px;
     }
+
     .banner-content{
         width: 90%;
     }
     .banner-img{
         height: auto;
+    }
+    .features-img-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .features-content{
+        width: 100%;
+    }
+    .features-btn-wrap{
+        text-align: center;
+    }
+    #some-fact{
+        padding: 20px;
+    }
+    .some-fact-title{
+        width: 100%;
+        margin-left: 0;
+    }
+    .fact{
+        width: 100%;
     }
 }
