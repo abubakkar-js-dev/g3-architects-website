@@ -34,6 +34,11 @@ box-sizing: border-box;
 .text-light-gray{
     color: #727272;
 }
+/* all desc */
+.description{
+    font-size: 1rem;
+    margin: 32px 0;
+}
 
 
 .btn-primary{
@@ -42,6 +47,11 @@ box-sizing: border-box;
     border: none;
     border-radius: 8px;
     font-size: 1.25rem;
+}
+
+main,footer{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* navbar section start */
@@ -68,7 +78,7 @@ nav h2{
     font-weight: 500;
 }
 .banner,.navbar{
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -91,19 +101,26 @@ nav h2{
     font-size: 4rem;
     margin-bottom: 10px;
 }
-.banner-description{
-    font-size: 1rem;
-    margin: 32px 0;
-}
+
 .banner-img{
     width: 100%;
     height: auto;
     margin-bottom: 45px;
 }
 
-
-
-
-
-
 /* banner section end */
+
+
+/* responsive with media queries */
+@media screen and (max-width: 576px) {
+    .navbar,.nav-links{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .banner-content{
+        width: 90%;
+    }
+    .banner-img{
+        height: auto;
+    }
+}
