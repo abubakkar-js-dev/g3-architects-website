@@ -145,6 +145,61 @@ nav h2{
     color: #FF900E;
 }
 
+/* features section start here */
+#features{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 20px;
+    padding-right: 0;
+}
+.features-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+
+}
+.features-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.features-card > p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.features-card-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.features-content{
+    width: 50%;
+}
+
+
+
+.features-img{
+    width: 50%;
+
+}
+.features-img img{
+    width: 100%;
+    height: auto;
+}
+.features-exp-btn{
+    max-width: 342px;
+    padding: 45px 42px;
+    background-color: #FF900E;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: -80px;
+    margin-top: -123px;
+}
+.features-exp-btn > .experience-year{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 
 /* some facts section  */
 .some-fact{
@@ -230,7 +285,7 @@ footer{
 
     .banner-content,
     .sponser-title{
-        width: 90%;
+        width: 95%;
     }
     .banner-img{
         height: auto;
@@ -239,7 +294,10 @@ footer{
         width: 100%;
         grid-template-columns: 1fr;
     }
-    .features-content{
+    .features-content,
+    .fact,
+    .features-content,
+    .features-img{
         width: 100%;
     }
     .features-btn-wrap{
@@ -252,13 +310,20 @@ footer{
         width: 100%;
         margin-left: 0;
     }
-    .fact{
-        width: 100%;
-    }
     .spnonsers-img-container{
         width: 100%;
         padding: 20px;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
+
+    #features{
+        flex-direction: column;
+    }
+    .features-exp-btn{
+       margin: 10px auto;
+       text-align: center;
+        
+    }
+
 }
